@@ -1,0 +1,298 @@
+.enrollNow {
+  padding: 50px 0;
+  background: linear-gradient(135deg, #CADCFC 0%, #A4BFEF 100%);
+}
+
+.enrollNow .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enrollNow .heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00246B;
+  margin: 0;
+}
+
+.enrollNow .form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.enrollNow .form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #CADCFC 0%, #A4BFEF 100%);
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.enrollNow .form input, .enrollNow .form select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding-left: 40px;
+  position: relative;
+}
+
+.enrollNow .form input:focus, .enrollNow .form select:focus {
+  border: 2px solid #89ABE3;
+  box-shadow: 0 0 10px rgba(137, 171, 227, 0.5);
+  outline: none;
+}
+
+.enrollNow .form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.enrollNow .form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #CADCFC 0%, #A4BFEF 100%);
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.enrollNow .form button:hover {
+  background-color: #00246B;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom icons for inputs */
+.enrollNow .form input[type="text"]::placeholder,
+.enrollNow .form input[type="email"]::placeholder,
+.enrollNow .form input[type="tel"]::placeholder,
+.enrollNow .form select::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.enrollNow .form input[type="text"]:before,
+.enrollNow .form input[type="email"]:before,
+.enrollNow .form input[type="tel"]:before,
+.enrollNow .form select:before {
+  content: attr(placeholder);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.enrollNow .form input[type="text"]:focus::before,
+.enrollNow .form input[type="email"]:focus::before,
+.enrollNow .form input[type="tel"]:focus::before,
+.enrollNow .form select:focus::before {
+  color: transparent;
+  transform: translateY(-50%) scale(0.85);
+}
+
+.enrollNow .form input[type="text"]:not(:placeholder-shown)::before,
+.enrollNow .form input[type="email"]:not(:placeholder-shown)::before,
+.enrollNow .form input[type="tel"]:not(:placeholder-shown)::before,
+.enrollNow .form select:not(:placeholder-shown)::before {
+  color: transparent;
+  transform: translateY(-50%) scale(0.85);
+}
+
+.enrollNow .form select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.enrollNow .form select option:checked {
+  background-color: #89ABE3;
+  color: #fff;
+}
+
+.enrollNow {
+  padding: 0; /* Remove padding to make the image full screen */
+  background: url('https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set the height to the full viewport height */
+  position: relative;
+  z-index: 1;
+}
+
+.enrollNow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+  z-index: -1;
+}
+
+.enrollNow .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.enrollNow .heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.enrollNow .form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.enrollNow .form input, .enrollNow .form select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding-left: 40px;
+  position: relative;
+}
+
+.enrollNow .form input:focus, .enrollNow .form select:focus {
+  border: 2px solid #89ABE3;
+  box-shadow: 0 0 10px rgba(137, 171, 227, 0.5);
+  outline: none;
+}
+
+.enrollNow .form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.enrollNow .form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #CADCFC 0%, #A4BFEF 100%);
+  opacity: 0.2;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.enrollNow .form button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom icons for inputs */
+.enrollNow .form input[type="text"]::placeholder,
+.enrollNow .form input[type="email"]::placeholder,
+.enrollNow .form input[type="tel"]::placeholder,
+.enrollNow .form select::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.enrollNow .form input[type="text"]:before,
+.enrollNow .form input[type="email"]:before,
+.enrollNow .form input[type="tel"]:before,
+.enrollNow .form select:before {
+  content: attr(placeholder);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.enrollNow .form input[type="text"]:focus::before,
+.enrollNow .form input[type="email"]:focus::before,
+.enrollNow .form input[type="tel"]:focus::before,
+.enrollNow .form select:focus::before {
+  color: transparent;
+  transform: translateY(-50%) scale(0.85);
+}
+
+.enrollNow .form input[type="text"]:not(:placeholder-shown)::before,
+.enrollNow .form input[type="email"]:not(:placeholder-shown)::before,
+.enrollNow .form input[type="tel"]:not(:placeholder-shown)::before,
+.enrollNow .form select:not(:placeholder-shown)::before {
+  color: transparent;
+  transform: translateY(-50%) scale(0.85);
+}
+
+.enrollNow .form select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.enrollNow .form select option:checked {
+  background-color: #89ABE3;
+  color: #fff;
+}
+
+
+
+

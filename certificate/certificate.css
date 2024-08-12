@@ -1,0 +1,101 @@
+.certificate-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #FFFFFF; /* White */
+  border: 2px solid #FAD0C9; /* Pink Salt outline */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.certificate-container h1 {
+  margin-bottom: 20px;
+  color: #6E6E6D; /* Charcoal Gray */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #6E6E6D; /* Charcoal Gray */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6E6E6D; /* Charcoal Gray */
+  border-radius: 5px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #6E6E6D; /* Charcoal Gray */
+  border-radius: 5px;
+}
+
+button {
+  background-color: #6E6E6D; /* Charcoal Gray */
+  color: #FAD0C9; /* Pink Salt */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5e5e5d;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  color: #6E6E6D; /* Charcoal Gray */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Additional styles for PDF container */
+
+.pdf-container {
+  border: 2px solid #FAD0C9; /* Pink Salt */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #FFFFFF; /* White */
+}
+
+.pdf-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6E6E6D; /* Charcoal Gray */
+}
+
+.pdf-container p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #6E6E6D; /* Charcoal Gray */
+}
+
+.pdf-container .signature {
+  text-align: center;
+  margin-top: 20px;
+  color: #6E6E6D; /* Charcoal Gray */
+  border-top: 1px solid #6E6E6D; /* Visible signature line */
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.pdf-container .seal {
+  position: absolute;
+  top: 140px;
+  left: 130px;
+  width: 30px;
+  height: 30px;
+}

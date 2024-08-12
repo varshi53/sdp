@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://media.istockphoto.com/id/1775933919/vector/holographic-or-rainbow-background.jpg?s=612x612&w=0&k=20&c=3bU5TGHWq-IsZ3Sy8gwVnGC6spUxweZbxCBQ9qE5-RI=') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Checkout Form Styles */
+  .checkout-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(15px);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .checkout-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .checkout-container h1::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ff416c;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1em;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  }
+  
+  button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  .checkout-confirm-button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #fff;
+  }
+  
+  .form-group::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #ff416c;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: rgba(255, 65, 108, 0.2);
+  }
+  
+  .form-group:hover input,
+  .form-group:hover select {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .checkout-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    opacity: 0.1;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .checkout-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .checkout-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="number"]:focus,
+  .form-group select:focus {
+    border-color: #007BFF;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+  }
+  
+  button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  /* Custom SweetAlert2 Styles */
+  .checkout-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007BFF;
+  }
+  
+  .checkout-content {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .checkout-confirm-button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-confirm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .checkout-confirm-button:active {
+    transform: scale(0.98);
+  }

@@ -1,0 +1,134 @@
+.aboutHome {
+  height: auto;
+  padding: 50px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.aboutHome .container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.aboutHome .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutHome .right {
+  padding: 50px;
+  border-left: 1px solid #ddd;
+}
+
+.aboutHome .items {
+  margin-top: 30px;
+}
+
+.aboutHome .item {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.aboutHome .img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aboutHome img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutHome .item h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.aboutHome .item p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.aboutHome .item:hover {
+  background-color: rgba(190, 164, 179, 0.9);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+}
+
+.aboutHome .item:hover p {
+  color: #fff;
+}
+
+/*----------awrapper------------*/
+
+.awrapper {
+  background-image: url("../../../public/images/awrapper.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.awrapper .box {
+  padding: 50px 0;
+}
+
+.awrapper img {
+  margin-right: 20px;
+  border-radius: 15px;
+  border: 3px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.awrapper h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.awrapper h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/*----------awrapper------------*/
+
+@media screen and (max-width: 768px) {
+  .aboutHome .container {
+    flex-direction: column-reverse;
+  }
+  .aboutHome .row {
+    width: 100%;
+  }
+  .awrapper {
+    height: 50vh;
+  }
+}
